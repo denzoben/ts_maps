@@ -16,4 +16,11 @@ export class Company {
             lat: faker.location.latitude()
         }
     }
+
+    markerContent() {
+        return `
+        Company Name: ${this.companyName}
+        Company Phrase: ${this.companyPhrase}
+        `;
+    }
 }
